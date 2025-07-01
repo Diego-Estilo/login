@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(135deg, #e3ecfa 0%, #cfd9df 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: #f7fafd;
+    width: 370px;
+    margin: 80px auto;
+    padding: 40px 40px 35px 40px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(44, 62, 80, 0.13);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-container::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    left: -60px;
+    width: 120px;
+    height: 120px;
+    background: #e0eafc;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.paper-icon {
+    font-size: 48px;
+    color: #007bff;
+    margin-bottom: 10px;
+    display: inline-block;
+    background: #eaf6ff;
+    border-radius: 50%;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.08);
+}
+
+.login-container h2 {
+    margin-bottom: 18px;
+    color: #2c3e50;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 92%;
+    padding: 12px;
+    margin: 12px 0 22px 0;
+    border: 1px solid #b0c4de;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f8fafc;
+    color: #2c3e50;
+    transition: border 0.2s;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border: 1.5px solid #007bff;
+    outline: none;
+}
+
+.login-container input[type="submit"] {
+    background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%);
+    color: #fff;
+    border: none;
+    padding: 13px 0;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.10);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.login-container input[type="submit"]:hover {
+    background: linear-gradient(90deg, #0056b3 60%, #0096c7 100%);
+    box-shadow: 0 4px 16px rgba(0,123,255,0.13);
+}
+
+.login-container p {
+    margin: 0 0 15px 0;
+    color: #e74c3c;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        width: 95%;
+        padding: 20px 5vw 25px 5vw;
+    }
+}
